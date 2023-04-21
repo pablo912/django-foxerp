@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Verifica tu correo electrónico</title>
+
+	<style>
+
+			.title{
+
+				font-size: 28px;
+				font-weight: bold;
+				text-align: center;
+				
+			}
+
+	</style>
+
+</head>
+<body>
+	<p class="title">Hola {{ user.name }},</p>
+	<p>Gracias por registrarte en nuestro sitio web. Por favor, haz clic en el siguiente enlace para verificar tu dirección de correo electrónico:</p>
+	<p><a href="http://localhost:4200/verify-email/{{user.api_token_email}}">Verificar mi correo electrónico</a></p>
+	<p>Si no has creado una cuenta en nuestro sitio web, ignora este correo electrónico.</p>
+	<p>Saludos,</p>
+	<p>El equipo de nuestro sitio web</p>
+</body>
+</html>
